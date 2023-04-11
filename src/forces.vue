@@ -25,7 +25,7 @@
       const simulation = forceSimulation(particles)
         .force('x', forceX().strength(0.05))
         .force('y', forceY().strength(0.05))
-        .force('collide', forceCollide().radius(5));
+        .force('collide', forceCollide().radius(10));
   
       // Define the particle elements
       const particle = svg.selectAll('.particle')
